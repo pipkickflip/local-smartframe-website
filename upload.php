@@ -31,7 +31,7 @@ try {
             throw new RuntimeException('Unknown errors.');
     }
 
-    $filepath = sprintf('../slideshow/images/%s_%s', uniqid(), $_FILES['file']['name']);
+    $filepath = sprintf('./slideshow/images/%s_%s', uniqid(), $_FILES['file']['name']);
 
     if (!move_uploaded_file(
         $_FILES['file']['tmp_name'],
